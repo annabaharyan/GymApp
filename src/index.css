@@ -5,7 +5,7 @@
 @theme {
   /* Breackpoints */
   --breakpoint-xs: 480px;
-  --breakpoint-sm: 786px
+  --breakpoint-sm: 786px;
   --breakpoint-md: 1060px;
   /* Gray colors */
   --color-gray-20: #f8f4eb;
@@ -13,14 +13,14 @@
   --color-gray-100: #dfcccc;
   --color-gray-500: #5e0000;
 
-/* Primary colors */
---color-primary-100: #fff0e0; 
---color-primary-300: #ffd9a3; 
---color-primary-500: #f79234; 
+  /* Primary colors */
+  --color-primary-100: #fff0e0;
+  --color-primary-300: #ffd9a3;
+  --color-primary-500: #f79234;
 
-/* Secondary colors */
---color-secondary-400: #e87b2c; 
---color-secondary-500: #cc601c; 
+  /* Secondary colors */
+  --color-secondary-400: #e87b2c;
+  --color-secondary-500: #cc601c;
 
   /* Background Images */
   --background-image-gradient-yellowred: linear-gradient(90deg, #ff616a 0%, #ffc837 100%);
@@ -31,8 +31,8 @@
   --font-montserrat: 'Montserrat', sans-serif;
 
   /* Content (for `content` utility) */
-  --content-evolvetext: url('./assets/EvolveText.png');
-  --content-abstractwaves: url('./assets/AbstractWaves.png');
-  --content-sparkles: url('./assets/Sparkles.png');
-  --content-circles: url('./assets/Circles.png');
+  --image-evolvetext: url('./assets/EvolveText.png');
+  --image-abstractwaves: url('./assets/AbstractWaves.png');
+  --image-sparkles: url('./assets/Sparkles.png');
+  --image-circles: url('./assets/Circles.png');
 }
