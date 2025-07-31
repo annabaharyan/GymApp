@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import Navbar from '@src/components/Navigation/Navbar/Navbar';
+import Navbar from '@src/components/Navbar/Navbar';
 import { SelectedPage } from '@src/types/enum';
 import Home from '@src/components/Home/Home';
+import Benefits from '@src/components/Benefits/Benefits';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
@@ -28,6 +29,7 @@ function App() {
         isTopOfPage={isTopOfPage}
       />
       <Home setSelectedPage={setSelectedPage} />
+      <Benefits setSelectedPage={setSelectedPage} />
     </div>
   );
 }
