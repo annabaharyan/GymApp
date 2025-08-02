@@ -4,6 +4,7 @@ import { HomeModernIcon, UserGroupIcon, AcademicCapIcon } from '@heroicons/react
 import { motion } from 'framer-motion';
 import HeadingText from '@src/components/shared/HeadingText';
 import Benefit from './Benefit';
+import Graphics from './Graphics';
 
 type BenefitsProps = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -70,6 +71,7 @@ const Benefits = ({ setSelectedPage }: BenefitsProps) => {
           ))}
         </motion.div>
       </motion.div>
+      <Graphics setSelectedPage={setSelectedPage} />
     </section>
   );
 };
