@@ -49,7 +49,7 @@ const ourClasses: ClassType[] = [
 
 const OurClasses = ({ setSelectedPage }: OurClassesProps) => {
   return (
-    <section className="bg-primary-100 w-full py-40">
+    <section id="ourclasses" className="bg-primary-100 w-full py-40">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}>
         <motion.div
           initial="hidden"
@@ -65,9 +65,9 @@ const OurClasses = ({ setSelectedPage }: OurClassesProps) => {
           <div className="md:w-3/5">
             <HeadingText>OUR CLASSES</HeadingText>
             <p className="my-5">
-              Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl sapien vel
-              rhoncus. Placerat at in enim pellentesque. Nulla adipiscing leo egestas nisi elit
-              risus sit. Nunc cursus sagittis.
+              Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est tellus quam
+              porttitor. Mauris velit euismod elementum arcu neque facilisi. Amet semper tortor
+              facilisis metus nibh. Rhoncus sit enim mattis odio in risus nunc.
             </p>
           </div>
         </motion.div>

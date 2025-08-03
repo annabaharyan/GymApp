@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
-import Navbar from '@src/components/Navbar/Navbar';
 import { SelectedPage } from '@src/types/enum';
+import Navbar from '@src/components/Navbar/Navbar';
 import Home from '@src/components/Home/Home';
 import Benefits from '@src/components/Benefits/Benefits';
-import OurClasses from './components/OurClasses/OurClasses';
+import OurClasses from '@src/components/OurClasses/OurClasses';
+import ContactUs from '@src/components/ContactUs/ContactUs';
+import Footer from '@src/components/Footer/Footer';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
-  const [isTopOfPage, setIsTopOfPage] = useState(true);
+  const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,6 +34,8 @@ function App() {
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   );
 }
